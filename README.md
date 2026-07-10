@@ -66,9 +66,9 @@ How to process a transaction and report terminal location.
 ```
 
 ## Transaction Processing 
+```sh
 
 # Initialization 
-```sh
 
         PosSdk.Builder(this)
             .setTransactionMode(TransactionMode.API)
