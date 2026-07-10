@@ -68,6 +68,8 @@ How to process a transaction and report terminal location.
 ## Transaction Processing 
 
 # Initialization 
+```sh
+
         PosSdk.Builder(this)
             .setTransactionMode(TransactionMode.API)
             .setTransactionCurrency(TransactionCurrency.NGN)
@@ -76,7 +78,10 @@ How to process a transaction and report terminal location.
             .build()
             .initialize()
 
+
 # ConfigTerminal
+```sh
+
         CoroutineScope(Dispatchers.Default + Job()).launch {
             delay(10000)
             val configStatus = PosSdk.configureTerminal()
@@ -88,7 +93,10 @@ How to process a transaction and report terminal location.
             }
         }
 
+
 # Process Transaction
+```sh
+
      fun startEMV(amt: Double) {
         PosSdk.uiHelper.showLoading("Please wait...")
 
@@ -162,6 +170,7 @@ How to process a transaction and report terminal location.
         }
     }
 
+```sh
    fun showMessage(message: String) {
         println("Message: $message")
     }
