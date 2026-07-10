@@ -80,7 +80,6 @@ How to process a transaction and report terminal location.
 
 
 # ConfigTerminal
-```sh
 
         CoroutineScope(Dispatchers.Default + Job()).launch {
             delay(10000)
@@ -95,7 +94,6 @@ How to process a transaction and report terminal location.
 
 
 # Process Transaction
-```sh
 
      fun startEMV(amt: Double) {
         PosSdk.uiHelper.showLoading("Please wait...")
@@ -170,14 +168,12 @@ How to process a transaction and report terminal location.
         }
     }
 
-```sh
    fun showMessage(message: String) {
         println("Message: $message")
     }
 
 
 ## NIbbs Geolocation Report
-```sh
 
   private fun startPosGeo() {
         PosSdk.initializeGeoLocation(
