@@ -168,6 +168,7 @@ How to process a transaction and report terminal location.
 
 
 ## NIbbs Geolocation Report
+```sh
 
   private fun startPosGeo() {
         PosSdk.initializeGeoLocation(
