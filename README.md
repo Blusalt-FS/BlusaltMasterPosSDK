@@ -71,9 +71,6 @@ How to process a transaction and report terminal location.
 # Initialization 
 
         PosSdk.Builder(this)
-            .setTransactionMode(TransactionMode.API)
-            .setTransactionCurrency(TransactionCurrency.NGN)
-            .setBuildType(BuildType.EXTERNAL)
             .setEnvironment(Environment.STAGING)
             .build()
             .initialize()
